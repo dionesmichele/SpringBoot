@@ -1,0 +1,22 @@
+package com.generation.blogDiones.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.generation.blogDiones.model.Usuario;
+import com.generation.blogDiones.repository.UsuarioRepository;
+
+@RestController
+public class UsuarioController {
+
+	@Autowired
+	private UsuarioRepository repository;
+
+	@GetMapping("/api/v1/usuario")
+	public List<Usuario> pegarTodos() {
+		return repository.findAll();
+	}
+}

@@ -1,0 +1,19 @@
+package com.generation.blogDiones.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.generation.blogDiones.model.Tema;
+
+public interface TemaRepository extends JpaRepository<Tema, String> {
+	public List<Tema> findAllByDescricaoContainingIgnoreCase(String descricao);
+
+	public void deleteById(long id);
+
+	
+	public Object findAllByGrupoContainingIgnoreCase(String grupo);
+
+	public Object findByIdTema(long idTema);
+}

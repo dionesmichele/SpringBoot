@@ -1,0 +1,5 @@
+package com.generation.blogDiones.service;
+
+public class UsuarioService {
+
+}

@@ -1,0 +1,5 @@
+package com.generation.blogDiones.model;
+
+public class Postagem {
+
+}

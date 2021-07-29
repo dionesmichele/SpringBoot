@@ -1,0 +1,10 @@
+package com.generation.blogDiones.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.generation.blogDiones.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, String> {
+
+
+}

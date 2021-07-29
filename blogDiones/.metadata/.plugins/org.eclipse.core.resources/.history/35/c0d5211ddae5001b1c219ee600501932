@@ -1,0 +1,20 @@
+
+package com.generation.blogDiones.service.UsuarioService
+import java.util.Optional;
+
+import com.generation.blogDiones.model.Usuario;
+import com.generation.blogDiones.model.UsuarioLogin;
+
+public class UsuarioService {
+
+	public Optional<UsuarioLogin> Logar(Optional<UsuarioLogin> usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Usuario CadastrarUsuario(Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
